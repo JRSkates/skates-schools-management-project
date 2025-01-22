@@ -57,7 +57,8 @@ StudentNode* find_student_by_name(StudentNode *head, const char *name) {
 
 void print_students(StudentNode* head) {
     StudentNode *current = head;
-
+    printf("\n");
+    printf("Students:\n");
     printf("================================================\n");
     while (current != NULL) {
         printf("ID: %d\nName: %s\n", current->id, current->name);
@@ -70,6 +71,7 @@ void print_students(StudentNode* head) {
         current = current->next;
     }
     printf("NULL\n"); // indicate the end of the list
+    printf("\n");
 }
 
 void add_subject_to_student(StudentNode *student, const char *subject_name) {
