@@ -43,6 +43,7 @@ This project is a command-line interface (CLI) program written in C, designed to
 
 ## **File Structure**
 
+```
 schools-management-project/
 ├── Makefile               # For building the project
 ├── main.c                 # Entry point for the program
@@ -65,6 +66,7 @@ schools-management-project/
 │   ├── teachers.txt       # [Bonus] Predefined or saved teacher data
 │   ├── grades.txt         # [Bonus] Predefined or saved grade data
 └── README.md              # Documentation for the project
+```
 
 ## **Makefile**
 ```makefile
