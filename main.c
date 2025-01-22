@@ -20,5 +20,11 @@ int main() {
     printf("Students:\n");
     print_students(student_list);
 
+    StudentNode *student = find_student_by_id(student_list, 1);
+
+    add_subject_to_student(student, "Maths");
+
+    print_students(student_list);
+
     return 0;
 }
