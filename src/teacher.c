@@ -30,3 +30,16 @@ void add_teacher(TeacherNode **head, int id, const char *name, const char *subje
 
     last->next = new_teacher;
 }
+
+void print_teachers(TeacherNode *head) {
+    TeacherNode *current = head;
+    printf("================================================\n");
+
+    while (current!= NULL) {
+        printf("ID: %d\nName: %s\nSubject: %s\n", current->id, current->name, current->subject);
+        printf("================================================\n");
+
+        current = current->next;
+    }
+    printf("NULL\n"); // indicate the end of the list
+}

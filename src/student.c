@@ -46,7 +46,8 @@ StudentNode* find_student_by_id(StudentNode *head, int id) {
 
 void print_students(StudentNode* head) {
     StudentNode *current = head;
-
+    
+    printf("================================================\n");
     while (current != NULL) {
         printf("ID: %d\nName: %s\n", current->id, current->name);
         printf("Subjects: ");
