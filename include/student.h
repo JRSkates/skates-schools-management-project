@@ -6,7 +6,7 @@ typedef struct StudentNode {
     char name[50]; 
     char subjects[10][50]; // Fixed-size array for subject names 
     int num_subjects; // Number of subjects the student is enrolled in
-    StudentNode *next; // Next student 
+    struct StudentNode *next; // Next student 
 } StudentNode;
 
 

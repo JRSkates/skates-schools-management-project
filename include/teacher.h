@@ -5,7 +5,7 @@ typedef struct TeacherNode {
     int id; 
     char name[50]; 
     char subject[50]; // The subject they teach struct 
-    TeacherNode *next; // Next teacher 
+    struct TeacherNode *next; // Next teacher 
 } TeacherNode;
 
 void add_teacher(TeacherNode **head, int id, const char *name, const char *subject); 
