@@ -31,6 +31,28 @@ void add_teacher(TeacherNode **head, int id, const char *name, const char *subje
     last->next = new_teacher;
 }
 
+TeacherNode* find_teacher_by_id(TeacherNode *head, int id) {
+    TeacherNode *current = head;
+    while (current!= NULL) {
+        if (current->id == id) {
+            return current; // Found the teacher
+        }
+        current = current->next;
+    }
+    return NULL; // Teacher not found
+}
+
+TeacherNode* find_teacher_by_name(TeacherNode *head, const char *name) {
+    TeacherNode *current = head;
+    while (current!= NULL) {
+        if (strcmp(current->name, name) == 0) {
+            return current; // Found the teacher
+        }
+        current = current->next;
+    }
+    return NULL; // Teacher not found
+}
+
 void print_teachers(TeacherNode *head) {
     TeacherNode *current = head;
     printf("================================================\n");

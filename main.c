@@ -33,6 +33,11 @@ int main() {
     add_subject_to_student(student, "Maths");
     printf("\n");
 
+    StudentNode *student2 = find_student_by_name(student_list, "Bob");
+
+    add_subject_to_student(student2, "Science");
+    printf("\n");
+
     print_students(student_list);
 
     return 0;

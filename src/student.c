@@ -44,9 +44,20 @@ StudentNode* find_student_by_id(StudentNode *head, int id) {
     return NULL; // Student not found
 }
 
+StudentNode* find_student_by_name(StudentNode *head, const char *name) {
+    StudentNode *current = head;
+    while (current!= NULL) {
+        if (strcmp(current->name, name) == 0) {
+            return current; // Found the student
+        }
+        current = current->next;
+    }
+    return NULL; // Student not found
+}
+
 void print_students(StudentNode* head) {
     StudentNode *current = head;
-    
+
     printf("================================================\n");
     while (current != NULL) {
         printf("ID: %d\nName: %s\n", current->id, current->name);
