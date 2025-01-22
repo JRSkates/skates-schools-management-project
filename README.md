@@ -3,6 +3,24 @@
 ## **Brief**
 This project is a command-line interface (CLI) program written in C, designed to manage a school system. It allows for managing students, teachers, subjects, and grades with additional querying capabilities.
 
+### Build and Run
+Build the Program:
+
+```bash
+make
+```
+
+Run the Program:
+
+```bash
+./program
+```
+Clean the Project:
+
+```bash
+make clean
+```
+
 ### **Core Features**
 - Add students and the subjects they study.
 - Add teachers and the subject they teach (one subject per teacher).
