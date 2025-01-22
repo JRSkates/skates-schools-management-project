@@ -18,7 +18,7 @@ int main() {
 
     // Print students and teachers
     printf("Students:\n");
-    printf(" %s\n", student_list->name);
+    print_students(student_list);
 
     return 0;
 }

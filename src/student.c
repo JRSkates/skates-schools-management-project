@@ -19,3 +19,18 @@ void add_student(StudentNode **head, int id, const char *name) {
     new_student->next = *head;
     *head = new_student;
 }
+
+void print_students(StudentNode* head) {
+    StudentNode *current = head;
+
+    while (current != NULL) {
+        printf("ID: %d, Name: %s\n", current->id, current->name);
+        printf("Subjects: ");
+        for (int i = 0; i < current->num_subjects; i++) {
+            printf("%s ", current->subjects[i]);
+        }
+        printf("\n");
+        current = current->next;
+    }
+    printf("NULL\n"); // indicate the end of the list
+}
