@@ -10,7 +10,8 @@ void display_menu() {
     printf("2. Add Teacher\n");
     printf("3. Print Students\n");
     printf("4. Print Teachers\n");
-    printf("5. Exit\n");
+    printf("5. Add Subject to Student\n");
+    printf("6. Exit\n");
     printf("--------------------------------\n");
     printf("Enter your choice: ");
 }
