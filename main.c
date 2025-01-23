@@ -12,11 +12,11 @@ int main() {
 
     int user_choice;
     int running = 1;
+    // char running = 1;
 
     while (running) {
         display_menu();
         scanf("%d", &user_choice);
-
         switch (user_choice) {
             case 1: { // Add student
                 int id;
