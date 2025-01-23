@@ -86,6 +86,7 @@ void add_subject_to_student(StudentNode *student, const char *subject_name) {
     printf("Subject added to %s: %s\n", student->name, subject_name);
 }
 
+// NEEDS DEBUGGING
 void students_by_subject(StudentNode *head, const char *subject) {
     StudentNode *current = head;
     int found = 0;

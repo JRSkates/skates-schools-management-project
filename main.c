@@ -30,6 +30,7 @@ int main() {
                 scanf(" %[^\n]", name); // Read a string with spaces
 
                 add_student(&student_list, id, name); // Add the student
+                StudentNode *new_student = find_student_by_id(student_list, id);
                 printf("Student added successfully.\n");
 
                 printf("Enter the subjects they study (separated by commas): ");
@@ -45,7 +46,7 @@ int main() {
                     *(end + 1) = '\0';
 
                     // Add the subject to the student
-                    add_subject_to_student(student_list, token);
+                    add_subject_to_student(new_student, token);
 
                     // Move to the next token
                     token = strtok(NULL, ",");
