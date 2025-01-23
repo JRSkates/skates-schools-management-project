@@ -98,7 +98,22 @@ int main() {
                 }
                 break;
             }
-            case 6:
+            case 6: {
+                // Find students by Subject
+                char subject_name[50];
+
+                printf("Enter Subject Name: ");
+                scanf(" %[^\n]", subject_name); // Read a string with spaces
+
+                 if (student_list == NULL) {
+                    printf("No students available.\n");
+                    break;
+                }
+
+                students_by_subject(student_list, subject_name);
+                break;
+            }
+            case 7:
                 // Exit program
                 printf("Goodbye!\n");
                 running = 0;

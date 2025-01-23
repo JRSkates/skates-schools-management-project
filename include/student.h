@@ -15,7 +15,7 @@ StudentNode* find_student_by_id(StudentNode *head, int id);
 StudentNode* find_student_by_name(StudentNode *head, const char *name); 
 void add_subject_to_student(StudentNode *student, const char *subject_name); 
 void print_students(StudentNode *head);
-void student_by_subject(StudentNode *head, char *subject_name);
+void students_by_subject(StudentNode *head, const char *subject);
 
 
 

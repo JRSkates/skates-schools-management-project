@@ -85,3 +85,23 @@ void add_subject_to_student(StudentNode *student, const char *subject_name) {
 
     printf("Subject added to %s: %s\n", student->name, subject_name);
 }
+
+void students_by_subject(StudentNode *head, const char *subject) {
+    StudentNode *current = head;
+    int found = 0;
+    printf("\n");
+    printf("Students studying %s:\n", subject);
+    printf("================================================\n");
+    for (int i = 0; i < current->num_subjects; i++) {
+        if (strcmp(current->subjects[i], subject) == 0) {
+            printf("ID: %d\nName: %s\n", current->id, current->name);
+            found++;
+        }
+        current = current->next;
+    }
+    if (found == 0) {
+        printf("No students found studying %s.\n", subject);
+    }
+    printf("================================================\n");
+    printf("\n");
+}
